@@ -1,0 +1,343 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 650  3650 1100 2200
+U 60782939
+F0 "Switch_Matrix" 50
+F1 "switch-matrix.sch" 50
+F2 "Row_0" U R 1750 3750 50 
+F3 "Row_1" U R 1750 3850 50 
+F4 "Row_2" U R 1750 3950 50 
+F5 "Row_3" U R 1750 4050 50 
+F6 "Col_0" I R 1750 5400 50 
+F7 "Col_1" I R 1750 5500 50 
+F8 "Col_2" I R 1750 5600 50 
+F9 "Col_3" I R 1750 5700 50 
+$EndSheet
+$Comp
+L MCU_Texas_MSP430:MSP430F5510IRGZ U1
+U 1 1 60799280
+P 4400 3750
+F 0 "U1" H 4450 2411 50  0000 C CNN
+F 1 "MSP430F5510IRGZ" H 4450 2320 50  0000 C CNN
+F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 3550 2600 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/msp430f5510.pdf" H 4450 3750 50  0001 C CNN
+	1    4400 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 4450 5750 4450
+Wire Wire Line
+	5650 4750 6050 4750
+Wire Wire Line
+	1750 4050 3250 4050
+Wire Wire Line
+	3250 3950 1750 3950
+Wire Wire Line
+	1750 3850 3250 3850
+Wire Wire Line
+	3250 3750 1750 3750
+Wire Wire Line
+	1750 5700 6050 5700
+Wire Wire Line
+	6050 5700 6050 4750
+Wire Wire Line
+	1750 5600 5950 5600
+Wire Wire Line
+	5950 5600 5950 4650
+Wire Wire Line
+	5950 4650 5650 4650
+Wire Wire Line
+	1750 5500 5850 5500
+Wire Wire Line
+	5850 5500 5850 4550
+Wire Wire Line
+	5850 4550 5650 4550
+Wire Wire Line
+	1750 5400 5750 5400
+Wire Wire Line
+	5750 5400 5750 4450
+$Comp
+L Switch:SW_Push SW?
+U 1 1 61371754
+P 6850 5150
+AR Path="/60782939/61371754" Ref="SW?"  Part="1" 
+AR Path="/61371754" Ref="SW5"  Part="1" 
+F 0 "SW5" H 6900 5250 50  0000 L CNN
+F 1 "L_Shift" H 6800 5250 50  0000 R CNN
+F 2 "msp430_Keyboard:Kailh_MX_Socket" H 6850 5350 50  0001 C CNN
+F 3 "~" H 6850 5350 50  0001 C CNN
+	1    6850 5150
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 6137175A
+P 6600 5150
+AR Path="/60782939/6137175A" Ref="SW?"  Part="1" 
+AR Path="/6137175A" Ref="SW4"  Part="1" 
+F 0 "SW4" H 6650 5250 50  0000 L CNN
+F 1 "L_Ctrl" H 6550 5250 50  0000 R CNN
+F 2 "msp430_Keyboard:Kailh_MX_Socket" H 6600 5350 50  0001 C CNN
+F 3 "~" H 6600 5350 50  0001 C CNN
+	1    6600 5150
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 61371760
+P 7350 5150
+AR Path="/60782939/61371760" Ref="SW?"  Part="1" 
+AR Path="/61371760" Ref="SW14"  Part="1" 
+F 0 "SW14" H 7400 5250 50  0000 L CNN
+F 1 "L_Super" H 7300 5250 50  0000 R CNN
+F 2 "msp430_Keyboard:Kailh_MX_Socket" H 7350 5350 50  0001 C CNN
+F 3 "~" H 7350 5350 50  0001 C CNN
+	1    7350 5150
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 61371766
+P 7100 5150
+AR Path="/60782939/61371766" Ref="SW?"  Part="1" 
+AR Path="/61371766" Ref="SW9"  Part="1" 
+F 0 "SW9" H 7150 5250 50  0000 L CNN
+F 1 "L_Alt" H 7050 5250 50  0000 R CNN
+F 2 "msp430_Keyboard:Kailh_MX_Socket" H 7100 5350 50  0001 C CNN
+F 3 "~" H 7100 5350 50  0001 C CNN
+	1    7100 5150
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 6137176C
+P 7950 5150
+AR Path="/60782939/6137176C" Ref="SW?"  Part="1" 
+AR Path="/6137176C" Ref="SW57"  Part="1" 
+F 0 "SW57" H 8000 5250 50  0000 L CNN
+F 1 "Alt_GR" H 7900 5250 50  0000 R CNN
+F 2 "msp430_Keyboard:Kailh_MX_Socket" H 7950 5350 50  0001 C CNN
+F 3 "~" H 7950 5350 50  0001 C CNN
+	1    7950 5150
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 61371772
+P 8150 5150
+AR Path="/60782939/61371772" Ref="SW?"  Part="1" 
+AR Path="/61371772" Ref="SW60"  Part="1" 
+F 0 "SW60" H 8200 5250 50  0000 L CNN
+F 1 "R_Super" H 8100 5250 50  0000 R CNN
+F 2 "msp430_Keyboard:Kailh_MX_Socket" H 8150 5350 50  0001 C CNN
+F 3 "~" H 8150 5350 50  0001 C CNN
+	1    8150 5150
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 61371778
+P 7550 5150
+AR Path="/60782939/61371778" Ref="SW?"  Part="1" 
+AR Path="/61371778" Ref="SW48"  Part="1" 
+F 0 "SW48" H 7600 5250 50  0000 L CNN
+F 1 "R_Ctrl" H 7500 5250 50  0000 R CNN
+F 2 "msp430_Keyboard:Kailh_MX_Socket" H 7550 5350 50  0001 C CNN
+F 3 "~" H 7550 5350 50  0001 C CNN
+	1    7550 5150
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 6137177E
+P 7750 5150
+AR Path="/60782939/6137177E" Ref="SW?"  Part="1" 
+AR Path="/6137177E" Ref="SW53"  Part="1" 
+F 0 "SW53" H 7800 5250 50  0000 L CNN
+F 1 "R_Shift" H 7700 5250 50  0000 R CNN
+F 2 "msp430_Keyboard:Kailh_MX_Socket" H 7750 5350 50  0001 C CNN
+F 3 "~" H 7750 5350 50  0001 C CNN
+	1    7750 5150
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 61371784
+P 8350 5150
+AR Path="/60782939/61371784" Ref="SW?"  Part="1" 
+AR Path="/61371784" Ref="SW61"  Part="1" 
+F 0 "SW61" H 8400 5250 50  0000 L CNN
+F 1 "FUNC" H 8300 5250 50  0000 R CNN
+F 2 "msp430_Keyboard:Kailh_MX_Socket" H 8350 5350 50  0001 C CNN
+F 3 "~" H 8350 5350 50  0001 C CNN
+	1    8350 5150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5650 2950 6600 2950
+Wire Wire Line
+	5650 3050 6850 3050
+Wire Wire Line
+	5650 3150 7100 3150
+Wire Wire Line
+	5650 3250 7350 3250
+Wire Wire Line
+	5650 3350 7550 3350
+Wire Wire Line
+	5650 3450 7750 3450
+Wire Wire Line
+	5650 3550 7950 3550
+Wire Wire Line
+	5650 3650 8150 3650
+Wire Wire Line
+	5650 3850 8350 3850
+Wire Wire Line
+	6600 2950 6600 4950
+Wire Wire Line
+	6850 3050 6850 4950
+Wire Wire Line
+	7100 3150 7100 4950
+Wire Wire Line
+	7350 3250 7350 4950
+Wire Wire Line
+	7550 3350 7550 4950
+Wire Wire Line
+	7750 3450 7750 4950
+Wire Wire Line
+	7950 3550 7950 4950
+Wire Wire Line
+	8150 3650 8150 4950
+Wire Wire Line
+	8350 3850 8350 4950
+$Comp
+L power:GND #PWR01
+U 1 1 613CF8EA
+P 6600 5850
+F 0 "#PWR01" H 6600 5600 50  0001 C CNN
+F 1 "GND" H 6605 5677 50  0000 C CNN
+F 2 "" H 6600 5850 50  0001 C CNN
+F 3 "" H 6600 5850 50  0001 C CNN
+	1    6600 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 5850 6600 5350
+$Comp
+L power:GND #PWR02
+U 1 1 613D242F
+P 6850 5850
+F 0 "#PWR02" H 6850 5600 50  0001 C CNN
+F 1 "GND" H 6855 5677 50  0000 C CNN
+F 2 "" H 6850 5850 50  0001 C CNN
+F 3 "" H 6850 5850 50  0001 C CNN
+	1    6850 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 5850 6850 5350
+$Comp
+L power:GND #PWR03
+U 1 1 613D2A9D
+P 7100 5850
+F 0 "#PWR03" H 7100 5600 50  0001 C CNN
+F 1 "GND" H 7105 5677 50  0000 C CNN
+F 2 "" H 7100 5850 50  0001 C CNN
+F 3 "" H 7100 5850 50  0001 C CNN
+	1    7100 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 5850 7100 5350
+$Comp
+L power:GND #PWR04
+U 1 1 613D31BE
+P 7350 5850
+F 0 "#PWR04" H 7350 5600 50  0001 C CNN
+F 1 "GND" H 7355 5677 50  0000 C CNN
+F 2 "" H 7350 5850 50  0001 C CNN
+F 3 "" H 7350 5850 50  0001 C CNN
+	1    7350 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 5850 7350 5350
+$Comp
+L power:GND #PWR05
+U 1 1 613D4375
+P 7550 5850
+F 0 "#PWR05" H 7550 5600 50  0001 C CNN
+F 1 "GND" H 7555 5677 50  0000 C CNN
+F 2 "" H 7550 5850 50  0001 C CNN
+F 3 "" H 7550 5850 50  0001 C CNN
+	1    7550 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 5850 7550 5350
+$Comp
+L power:GND #PWR06
+U 1 1 613D4C02
+P 7750 5850
+F 0 "#PWR06" H 7750 5600 50  0001 C CNN
+F 1 "GND" H 7755 5677 50  0000 C CNN
+F 2 "" H 7750 5850 50  0001 C CNN
+F 3 "" H 7750 5850 50  0001 C CNN
+	1    7750 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 5850 7750 5350
+$Comp
+L power:GND #PWR07
+U 1 1 613D555A
+P 7950 5850
+F 0 "#PWR07" H 7950 5600 50  0001 C CNN
+F 1 "GND" H 7955 5677 50  0000 C CNN
+F 2 "" H 7950 5850 50  0001 C CNN
+F 3 "" H 7950 5850 50  0001 C CNN
+	1    7950 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 5850 7950 5350
+$Comp
+L power:GND #PWR08
+U 1 1 613D5D9D
+P 8150 5850
+F 0 "#PWR08" H 8150 5600 50  0001 C CNN
+F 1 "GND" H 8155 5677 50  0000 C CNN
+F 2 "" H 8150 5850 50  0001 C CNN
+F 3 "" H 8150 5850 50  0001 C CNN
+	1    8150 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 5850 8150 5350
+$Comp
+L power:GND #PWR09
+U 1 1 613D687D
+P 8350 5850
+F 0 "#PWR09" H 8350 5600 50  0001 C CNN
+F 1 "GND" H 8355 5677 50  0000 C CNN
+F 2 "" H 8350 5850 50  0001 C CNN
+F 3 "" H 8350 5850 50  0001 C CNN
+	1    8350 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 5850 8350 5350
+$EndSCHEMATC
