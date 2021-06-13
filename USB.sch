@@ -1,0 +1,153 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:USB_C_Receptacle_USB2.0 J?
+U 1 1 60C64F93
+P 2900 2800
+F 0 "J?" H 3007 3667 50  0000 C CNN
+F 1 "USB_C_Receptacle_USB2.0" H 3007 3576 50  0000 C CNN
+F 2 "" H 3050 2800 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 3050 2800 50  0001 C CNN
+	1    2900 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 60C65B8B
+P 3800 3750
+F 0 "R?" H 3859 3796 50  0000 L CNN
+F 1 "R_Small" H 3859 3705 50  0000 L CNN
+F 2 "" H 3800 3750 50  0001 C CNN
+F 3 "~" H 3800 3750 50  0001 C CNN
+	1    3800 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 60C65E97
+P 3950 3750
+F 0 "R?" H 4009 3796 50  0000 L CNN
+F 1 "R_Small" H 4009 3705 50  0000 L CNN
+F 2 "" H 3950 3750 50  0001 C CNN
+F 3 "~" H 3950 3750 50  0001 C CNN
+	1    3950 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 2500 3800 2500
+Wire Wire Line
+	3800 2500 3800 3650
+Wire Wire Line
+	3500 2400 3950 2400
+Wire Wire Line
+	3950 2400 3950 3650
+$Comp
+L power:GND #PWR?
+U 1 1 60C664F0
+P 2600 4200
+F 0 "#PWR?" H 2600 3950 50  0001 C CNN
+F 1 "GND" H 2605 4027 50  0000 C CNN
+F 2 "" H 2600 4200 50  0001 C CNN
+F 3 "" H 2600 4200 50  0001 C CNN
+	1    2600 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60C668AF
+P 2900 4200
+F 0 "#PWR?" H 2900 3950 50  0001 C CNN
+F 1 "GND" H 2905 4027 50  0000 C CNN
+F 2 "" H 2900 4200 50  0001 C CNN
+F 3 "" H 2900 4200 50  0001 C CNN
+	1    2900 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60C66B88
+P 3800 4200
+F 0 "#PWR?" H 3800 3950 50  0001 C CNN
+F 1 "GND" H 3805 4027 50  0000 C CNN
+F 2 "" H 3800 4200 50  0001 C CNN
+F 3 "" H 3800 4200 50  0001 C CNN
+	1    3800 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60C66EFE
+P 3950 4200
+F 0 "#PWR?" H 3950 3950 50  0001 C CNN
+F 1 "GND" H 3955 4027 50  0000 C CNN
+F 2 "" H 3950 4200 50  0001 C CNN
+F 3 "" H 3950 4200 50  0001 C CNN
+	1    3950 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 60C6718E
+P 2600 3950
+F 0 "R?" H 2659 3996 50  0000 L CNN
+F 1 "R_Small" H 2659 3905 50  0000 L CNN
+F 2 "" H 2600 3950 50  0001 C CNN
+F 3 "~" H 2600 3950 50  0001 C CNN
+	1    2600 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 3700 2600 3850
+Wire Wire Line
+	2600 4050 2600 4200
+Wire Wire Line
+	2900 3700 2900 4200
+Wire Wire Line
+	3800 3850 3800 4200
+Wire Wire Line
+	3950 4200 3950 3850
+Wire Wire Line
+	3500 2700 3500 2800
+Wire Wire Line
+	3500 2900 3500 3000
+NoConn ~ 3500 3300
+NoConn ~ 3500 3400
+$Comp
+L power:VBUS #PWR?
+U 1 1 60C69382
+P 3950 1950
+F 0 "#PWR?" H 3950 1800 50  0001 C CNN
+F 1 "VBUS" H 3965 2123 50  0000 C CNN
+F 2 "" H 3950 1950 50  0001 C CNN
+F 3 "" H 3950 1950 50  0001 C CNN
+	1    3950 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 1950 3950 2200
+Wire Wire Line
+	3950 2200 3500 2200
+Text HLabel 4100 3000 2    50   BiDi ~ 0
+D+
+Text HLabel 4100 2700 2    50   BiDi ~ 0
+D-
+Wire Wire Line
+	4100 3000 3500 3000
+Connection ~ 3500 3000
+Wire Wire Line
+	4100 2700 3500 2700
+Connection ~ 3500 2700
+$EndSCHEMATC
