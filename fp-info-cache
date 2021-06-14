@@ -1,4 +1,4 @@
-19212164176638393
+19231652749186220
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -51575,6 +51575,90 @@ Fuse Fuseholder TR5 Littelfuse/Wickmann No. 460 No560
 0
 2
 2
+HS-Wismar
+2mm_Socket
+
+
+0
+1
+1
+HS-Wismar
+L_Coilcraft_XxL4040_handsolder
+L_Coilcraft_XxL4040 https://www.coilcraft.com/pdfs/xal4000.pdf
+L Coilcraft XxL4040
+0
+2
+2
+HS-Wismar
+MS_500AVT
+
+
+0
+5
+4
+HS-Wismar
+OSHW-Logo2_14.6x12mm_Copper
+Open Source Hardware Symbol
+Logo Symbol OSHW
+0
+0
+0
+HS-Wismar
+OSHW-Logo2_14.6x12mm_SilkScreen
+Open Source Hardware Symbol
+Logo Symbol OSHW
+0
+0
+0
+HS-Wismar
+SS_13PLP
+
+
+0
+5
+3
+HS-Wismar
+TI_Launchpad
+
+
+0
+40
+40
+HS-Wismar
+USB_micro_vertical
+
+
+0
+7
+6
+HS-Wismar
+XBEE_THT
+
+
+0
+20
+20
+HS-Wismar
+hs-logo
+
+
+0
+0
+0
+HS-Wismar
+hs-logo_8mm
+
+
+0
+0
+0
+HS-Wismar
+micro32
+
+
+0
+38
+38
 Heatsink
 Heatsink_35x26mm_1xFixation3mm_Fischer-SK486-35
 Heatsink, 35mm x 26mm, 1x Fixation 3mm, Fischer SK486-35

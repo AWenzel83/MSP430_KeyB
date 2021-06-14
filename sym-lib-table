@@ -1,3 +1,5 @@
 (sym_lib_table
   (lib (name msp430)(type Legacy)(uri ${KIPRJMOD}/msp430.lib)(options "")(descr ""))
+  (lib (name HS-Wismar)(type Legacy)(uri /home/andreas/Entwicklung/KiCad/MCT-Labor_5529/HS-Wismar.lib)(options "")(descr ""))
+  (lib (name MCT_Labor_5529-rescue)(type Legacy)(uri /home/andreas/Entwicklung/KiCad/MCT-Labor_5529/MCT_Labor_5529-rescue.lib)(options "")(descr ""))
 )

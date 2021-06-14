@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name msp430_Keyboard)(type KiCad)(uri ${KIPRJMOD}/msp430_Keyboard.pretty)(options "")(descr ""))
+  (lib (name HS-Wismar)(type KiCad)(uri /home/andreas/Entwicklung/KiCad/MCT-Labor_5529/HS-Wismar.pretty)(options "")(descr ""))
 )
