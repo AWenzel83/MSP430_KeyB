@@ -1,4 +1,4 @@
-19231652749186220
+19233298449202220
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -83110,6 +83110,13 @@ varistor SIOV
 0
 2
 2
+msp430_Keyboard
+632723300011
+632723300011
+Connector
+0
+32
+32
 msp430_Keyboard
 Kailh_MX_Socket
 
