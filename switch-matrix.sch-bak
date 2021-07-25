@@ -434,12 +434,12 @@ $EndComp
 $Comp
 L Switch:SW_Push SW59
 U 1 1 60799DB7
-P 10500 2000
-F 0 "SW59" H 10500 2285 50  0000 C CNN
-F 1 "Enter" H 10500 2194 50  0000 C CNN
-F 2 "msp430_Keyboard:Kailh_MX_Socket" H 10500 2200 50  0001 C CNN
-F 3 "~" H 10500 2200 50  0001 C CNN
-	1    10500 2000
+P 10500 2700
+F 0 "SW59" H 10500 2985 50  0000 C CNN
+F 1 "Enter" H 10500 2894 50  0000 C CNN
+F 2 "msp430_Keyboard:Kailh_MX_Socket" H 10500 2900 50  0001 C CNN
+F 3 "~" H 10500 2900 50  0001 C CNN
+	1    10500 2700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -748,10 +748,6 @@ Wire Wire Line
 Wire Wire Line
 	9650 1900 9000 1900
 Wire Wire Line
-	10300 2000 10300 2450
-Wire Wire Line
-	10300 2450 9650 2450
-Wire Wire Line
 	1850 2300 1850 2450
 Connection ~ 1850 2450
 Wire Wire Line
@@ -812,7 +808,6 @@ Wire Wire Line
 	9000 2450 8350 2450
 Wire Wire Line
 	9650 2300 9650 2450
-Connection ~ 9650 2450
 Wire Wire Line
 	9650 2450 9000 2450
 $Comp
@@ -1250,12 +1245,12 @@ $EndComp
 $Comp
 L Device:D_Small D52
 U 1 1 60F82724
-P 10800 2000
-F 0 "D52" H 10800 1793 50  0000 C CNN
-F 1 "D_Small" H 10800 1884 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-323_HandSoldering" V 10800 2000 50  0001 C CNN
-F 3 "~" V 10800 2000 50  0001 C CNN
-	1    10800 2000
+P 10800 2700
+F 0 "D52" H 10800 2493 50  0000 C CNN
+F 1 "D_Small" H 10800 2584 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" V 10800 2700 50  0001 C CNN
+F 3 "~" V 10800 2700 50  0001 C CNN
+	1    10800 2700
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -1733,18 +1728,15 @@ Wire Wire Line
 Connection ~ 10250 1750
 Wire Wire Line
 	10250 1750 10250 2300
-Connection ~ 10250 2300
 Wire Wire Line
-	10250 2300 10250 3650
-Wire Wire Line
-	10900 1200 10900 2000
+	10900 1200 10900 2700
 Wire Wire Line
 	10900 3750 8500 3750
 Wire Wire Line
 	8500 3750 8500 3850
-Connection ~ 10900 2000
+Connection ~ 10900 2700
 Wire Wire Line
-	10900 2000 10900 3750
+	10900 2700 10900 3750
 Wire Wire Line
 	7700 4350 7700 5700
 Wire Wire Line
@@ -1885,12 +1877,6 @@ F 3 "~" V 10250 3950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	10250 3650 10250 3850
-Connection ~ 10250 3650
-Wire Wire Line
-	10050 4050 10050 3000
-Wire Wire Line
-	10050 3000 9000 3000
-Connection ~ 9000 3000
 Text HLabel 10600 4800 2    50   UnSpc ~ 0
 A
 Text HLabel 10600 4900 2    50   UnSpc ~ 0
@@ -1916,4 +1902,24 @@ F 3 "" H 10150 5950 50  0001 C CNN
 	1    10150 5950
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	10050 2450 10350 2450
+Wire Wire Line
+	10350 2450 10350 1900
+Wire Wire Line
+	10350 1900 9650 1900
+Wire Wire Line
+	10050 2450 10050 4050
+Connection ~ 9650 1900
+Connection ~ 10250 3650
+Connection ~ 10250 2300
+Wire Wire Line
+	10250 2300 10250 3650
+Wire Wire Line
+	10300 2700 9850 2700
+Wire Wire Line
+	9850 2700 9850 2450
+Wire Wire Line
+	9850 2450 9650 2450
+Connection ~ 9650 2450
 $EndSCHEMATC
