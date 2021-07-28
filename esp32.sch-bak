@@ -80,7 +80,7 @@ U 1 1 60C8F6BC
 P 3650 3150
 F 0 "C5" H 3742 3196 50  0000 L CNN
 F 1 "C_Small" H 3742 3105 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 3650 3150 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 3650 3150 50  0001 C CNN
 F 3 "~" H 3650 3150 50  0001 C CNN
 	1    3650 3150
 	1    0    0    -1  
@@ -97,14 +97,6 @@ Text HLabel 3300 2650 0    50   Input ~ 0
 EN_\RST
 Wire Wire Line
 	3300 2650 4050 2650
-Text HLabel 6700 2750 2    50   Output ~ 0
-TX_out
-Text HLabel 6700 2850 2    50   Input ~ 0
-RX_in
-Wire Wire Line
-	6700 2850 6000 2850
-Wire Wire Line
-	6000 2750 6700 2750
 $Comp
 L Switch:SW_Push SW62
 U 1 1 60C91D18
@@ -132,10 +124,6 @@ Wire Wire Line
 Connection ~ 4050 2650
 Wire Wire Line
 	4050 2650 4500 2650
-Wire Wire Line
-	6550 4000 6550 3850
-Wire Wire Line
-	6550 3850 6000 3850
 $Comp
 L power:GND #PWR0129
 U 1 1 60C9F4A3
@@ -162,4 +150,57 @@ Wire Wire Line
 	6550 4500 6550 4400
 Wire Wire Line
 	4050 4400 4050 4500
+Wire Wire Line
+	6000 3750 6550 3750
+Wire Wire Line
+	6550 3750 6550 4000
+$Comp
+L power:GND #PWR033
+U 1 1 60FDD502
+P 7250 4550
+F 0 "#PWR033" H 7250 4300 50  0001 C CNN
+F 1 "GND" H 7255 4377 50  0000 C CNN
+F 2 "" H 7250 4550 50  0001 C CNN
+F 3 "" H 7250 4550 50  0001 C CNN
+	1    7250 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R11
+U 1 1 60FDDAD5
+P 6700 2650
+F 0 "R11" V 6504 2650 50  0000 C CNN
+F 1 "470" V 6595 2650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 6700 2650 50  0001 C CNN
+F 3 "~" H 6700 2650 50  0001 C CNN
+	1    6700 2650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6000 2750 7550 2750
+Wire Wire Line
+	7550 2850 6000 2850
+Text HLabel 7550 2850 2    50   Input ~ 0
+RX_in
+Text HLabel 7550 2750 2    50   Output ~ 0
+TX_out
+$Comp
+L Device:LED_Small D55
+U 1 1 60FE43BF
+P 7250 3450
+F 0 "D55" V 7296 3380 50  0000 R CNN
+F 1 "LED_Small" V 7205 3380 50  0000 R CNN
+F 2 "LED_THT:LED_D3.0mm_Horizontal_O1.27mm_Z2.0mm" V 7250 3450 50  0001 C CNN
+F 3 "~" V 7250 3450 50  0001 C CNN
+	1    7250 3450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6000 2650 6600 2650
+Wire Wire Line
+	6800 2650 7250 2650
+Wire Wire Line
+	7250 2650 7250 3350
+Wire Wire Line
+	7250 3550 7250 4550
 $EndSCHEMATC
