@@ -1731,7 +1731,7 @@ Wire Wire Line
 Wire Wire Line
 	10900 1200 10900 2700
 Wire Wire Line
-	10900 3750 8500 3750
+	10900 3750 10250 3750
 Wire Wire Line
 	8500 3750 8500 3850
 Connection ~ 10900 2700
@@ -1875,8 +1875,6 @@ F 3 "~" V 10250 3950 50  0001 C CNN
 	1    10250 3950
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	10250 3650 10250 3850
 Text HLabel 10600 4800 2    50   UnSpc ~ 0
 A
 Text HLabel 10600 4900 2    50   UnSpc ~ 0
@@ -1911,7 +1909,6 @@ Wire Wire Line
 Wire Wire Line
 	10050 2450 10050 4050
 Connection ~ 9650 1900
-Connection ~ 10250 3650
 Connection ~ 10250 2300
 Wire Wire Line
 	10250 2300 10250 3650
@@ -1922,4 +1919,9 @@ Wire Wire Line
 Wire Wire Line
 	9850 2450 9650 2450
 Connection ~ 9650 2450
+Wire Wire Line
+	10250 3850 10250 3750
+Connection ~ 10250 3750
+Wire Wire Line
+	10250 3750 8500 3750
 $EndSCHEMATC
